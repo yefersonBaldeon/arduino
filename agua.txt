@@ -1,0 +1,11 @@
+int SENSOR;		// variable para almacenar valor leido
+
+void setup(){
+  Serial.begin(9600);	// inicializa monitor serie a 9600 bps
+}
+
+void loop(){
+  SENSOR = analogRead(A0);	// lee y almacena en variable valor leido de entrada A0
+  Serial.println(SENSOR);	// muestra en monitor serie
+  delay(2000);			// demora de 1 segundo
+}
